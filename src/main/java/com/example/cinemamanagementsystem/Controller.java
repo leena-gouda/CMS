@@ -122,13 +122,6 @@ public abstract class Controller {
 
     }
 
-    public ButtonType infoBox(String infoMessage, String title) {
-        Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
-        alert.setContentText(infoMessage);
-        alert.setTitle(title);
-        ButtonType result = alert.showAndWait().orElse(ButtonType.CANCEL);
-        return result;
-    }
 
 
     public void showAlert(Alert.AlertType alertType, Window owner, String title, String message) {

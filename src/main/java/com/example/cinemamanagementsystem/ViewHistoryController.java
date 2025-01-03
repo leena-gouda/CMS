@@ -64,7 +64,7 @@ public class ViewHistoryController extends Controller {
 
     private void loadBookingData() {
         String query = "SELECT B.BookingID, B.CustomerID, M.Movieid, " +
-                "M.Title, S.StartTime, S.EndTime, S.TicketPrice, " +
+                "M.Title, S.StartTime, S.EndTime, " +
                 "S.HallID, B.totalPrice, B.usePoints " +
                 "FROM Booking B " +
                 "JOIN Showtime S ON B.ShowtimeID = S.ShowtimeID " +

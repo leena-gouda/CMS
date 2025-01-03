@@ -151,7 +151,9 @@ public class Jdbc {
                     String movieTitle = rs.getString("Title");  // Get movie title from Movie table
                     Timestamp startTime = rs.getTimestamp("StartTime");
                     Timestamp endTime = rs.getTimestamp("EndTime");
+
                     String hallid = rs.getString("HallID");
+
                     double totalPrice = rs.getDouble("totalPrice");
                     boolean usePoints = rs.getBoolean("usePoints");
 
